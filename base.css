@@ -1,0 +1,96 @@
+@charset "ISO-8859-1";
+
+body{
+  font-size: 12px;
+  font-family: sans-serif;
+  line-height: 1.2;
+  background-color: #f4f4f4;
+  padding: 1;
+  margin: 0;
+}
+
+/*Global Variables*/
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*Header Section starts here*/
+header{
+  font-family: Arial;
+  font-variant: inherit;
+  background:#35424a;
+  color:#ffffff;
+  padding-top: 15px;
+  min-height: 50px;
+  border-bottom: red 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  font-size: 16px;
+  text-decoration: none; /*Removes the underlines under the links*/
+  text-transform: uppercase; /*Makes text uppercase*/
+}
+
+header ul{
+  /*Unordered list comes with padding and margins.So we need to remove it.*/
+  margin:0;
+  padding: 0;
+}
+
+header li{
+  float:left;
+  font-weight: bold;
+  display: inline;
+
+  /*Padding top right bottom left*/
+  /*Here each element starts 20px right from the start position and 20px left from the left position*/
+  padding: 0 20px 0 20px;
+}
+
+/*Move the 'Welcome to Capital Bank' section to the left*/
+header #branding{
+  float: left;
+}
+
+/*Move the navigation section to the right*/
+header nav{
+  float: right;
+  margin-top: 20px;
+}
+
+/*Provide specific sections of the header with different effects*/
+header .highlight,header .current a{
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/*When hovering over the header list items*/
+header a:hover{
+  color:#ff0000;
+  font-weight: bold;
+}
+
+/*Header Section ends here*/
+
+/*Showcase section starts here*/
+#showcase{
+  min-height: 350px;
+  background:url("showcase.jpg") no-repeat 100px -145px;
+}
+
+#showcase h1{
+  color: black;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#showcase p{
+  color: black;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
