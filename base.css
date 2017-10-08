@@ -22,8 +22,9 @@ header{
   font-variant: inherit;
   background:#35424a;
   color:#ffffff;
-  padding-top: 15px;
+  padding-top: 10px;
   min-height: 50px;
+  max-width: 1400px;
   border-bottom: red 3px solid;
 }
 
@@ -44,10 +45,9 @@ header li{
   float:left;
   font-weight: bold;
   display: inline;
-
+  padding: 0 20px 0 20px;
   /*Padding top right bottom left*/
   /*Here each element starts 20px right from the start position and 20px left from the left position*/
-  padding: 0 20px 0 20px;
 }
 
 /*Move the 'Welcome to Capital Bank' section to the left*/
@@ -69,28 +69,62 @@ header .highlight,header .current a{
 
 /*When hovering over the header list items*/
 header a:hover{
-  color:#ff0000;
+  color:black;
   font-weight: bold;
 }
 
 /*Header Section ends here*/
 
+/*Main Tab Items Section starts here*/
+#MainTabItems{
+  min-height: 35px;
+  max-height: 45px;
+  max-width: 1400px;
+  margin-top: 1px;
+  background:#35424a;
+  border-bottom: 10px;
+  border-color: black;
+  color:#ffffff;
+}
+
+#MainTabItems button{
+   background-color: #E52727;
+   color: black;
+   border: none;
+   margin: 3px 0 3px 0;
+   display: inline-block;
+   height: 39px;
+   width: 150px;
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   text-decoration: none;
+   transition-duration: 0.4s;
+   cursor: pointer;
+}
+
+#MainTabItems button:hover{
+  background-color:black;
+  color:white;
+}
+
+/*Main Tab Items Section ends here*/
+
 /*Showcase section starts here*/
 #showcase{
   min-height: 350px;
-  background:url("showcase.jpg") no-repeat 100px -145px;
+  background:url("showcase.jpg") no-repeat 137px -145px;
+  /*px values adjusts the image as we want x-axis y-axis*/
 }
 
 #showcase h1{
   color: black;
   font-size: 40px;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin: 50px 0 20px 5px;
 }
 
 #showcase p{
   color: black;
   font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 10px 0 20px 5px;
 }
